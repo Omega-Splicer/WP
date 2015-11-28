@@ -84,12 +84,8 @@ namespace OmegaSplicer
 
         private async void HideStatusBar()
         {
-           // await Windows.UI.ViewManagement.StatusBar.GetForCurrentView().HideAsync();
+           await Windows.UI.ViewManagement.StatusBar.GetForCurrentView().HideAsync();
         }
-
-        #region Joystick
-
-        #endregion
 
         #region Inscription de NavigationHelper
 
