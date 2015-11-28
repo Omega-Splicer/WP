@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>CISNER_D_MSI</Machine>
+    <WindowsUser>dimit_000</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>8ed37ac8-c28b-4e43-be31-48c537a763c6</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\dimit_000\Desktop\OmegaSplicer\OmegaSplicer\OmegaSplicer\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\dimit_000\Desktop\OmegaSplicer\OmegaSplicer\OmegaSplicer\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\OmegaSplicer\OmegaSplicer\OmegaSplicer\bin\Debug\OmegaSplicer.exe">
+      <PackagePath>OmegaSplicer.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\OmegaSplicer\OmegaSplicer\OmegaSplicer\Assets\battery_25.png">
+      <PackagePath>Assets\battery_25.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\OmegaSplicer\OmegaSplicer\OmegaSplicer\Assets\battery_50.png">
+      <PackagePath>Assets\battery_50.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\OmegaSplicer\OmegaSplicer\OmegaSplicer\Assets\battery_75.png">
+      <PackagePath>Assets\battery_75.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\OmegaSplicer\OmegaSplicer\OmegaSplicer\Assets\battery_full.png">
+      <PackagePath>Assets\battery_full.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\OmegaSplicer\OmegaSplicer\OmegaSplicer\Assets\Home_white.png">
+      <PackagePath>Assets\Home_white.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\OmegaSplicer\OmegaSplicer\OmegaSplicer\Assets\Logo.scale-240.png">
+      <PackagePath>Assets\Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\OmegaSplicer\OmegaSplicer\OmegaSplicer\Assets\no_man_sky.png">
+      <PackagePath>Assets\no_man_sky.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\OmegaSplicer\OmegaSplicer\OmegaSplicer\Assets\Paper-Plane.png">
+      <PackagePath>Assets\Paper-Plane.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\OmegaSplicer\OmegaSplicer\OmegaSplicer\Assets\rss.png">
+      <PackagePath>Assets\rss.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\OmegaSplicer\OmegaSplicer\OmegaSplicer\Assets\SmallLogo.scale-240.png">
+      <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\OmegaSplicer\OmegaSplicer\OmegaSplicer\Assets\SplashScreen.scale-240.png">
+      <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\OmegaSplicer\OmegaSplicer\OmegaSplicer\Assets\Square71x71Logo.scale-240.png">
+      <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\OmegaSplicer\OmegaSplicer\OmegaSplicer\Assets\StoreLogo.scale-240.png">
+      <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\OmegaSplicer\OmegaSplicer\OmegaSplicer\Assets\WideLogo.scale-240.png">
+      <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\OmegaSplicer\OmegaSplicer\OmegaSplicer\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\OmegaSplicer\OmegaSplicer\OmegaSplicer\bin\Debug\Dictionary1.xbf">
+      <PackagePath>Dictionary1.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\OmegaSplicer\OmegaSplicer\OmegaSplicer\bin\Debug\FlyPage.xbf">
+      <PackagePath>FlyPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\OmegaSplicer\OmegaSplicer\OmegaSplicer\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\OmegaSplicer\OmegaSplicer\OmegaSplicer\bin\Debug\OmegaSplicer.xr.xml">
+      <PackagePath>OmegaSplicer.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\OmegaSplicer\OmegaSplicer\OmegaSplicer\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
