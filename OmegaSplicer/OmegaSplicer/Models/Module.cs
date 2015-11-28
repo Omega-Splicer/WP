@@ -22,6 +22,7 @@ namespace OmegaSplicer.Model
 
         // The Power of the module.
         private int _power;
+
         public int Power
         {
             get { return _power; } 
