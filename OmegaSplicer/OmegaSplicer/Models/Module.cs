@@ -15,7 +15,19 @@ namespace OmegaSplicer.Model
         public string Battery { get; set; }
 
         // The Motor's Power of the motor.
-        public int Motor { get; set; }
+        private int _motor;
+        public int Motor 
+        {
+            get { return this._motor; }
+            set
+            {
+                if (this._motor != value)
+                {
+                    this._motor = value;
+                    this.RaisePropertyChanged("Motor");
+                }
+            }
+        }
 
         // The coordonates of the module.
         public int Coor { get; set; }
@@ -39,6 +51,7 @@ namespace OmegaSplicer.Model
                         this.Battery = "Assets/battery_75.png";
                     else
                         this.Battery = "Assets/battery_full.png";
+                    this.RaisePropertyChanged("Battery");
                 }
             }
         }
@@ -74,7 +87,7 @@ namespace OmegaSplicer.Model
         // Reset the power add coordonate of the module
         public void Reset()
         {
-            this.Motor = 0;
+            this._motor = 0;
             this.Coor = 0;
         }
     }

@@ -12,7 +12,7 @@
     <RootPropertyPathName Name="JoystickY" />
     <RootPropertyPathName Name="SelectedModule" />
     <RootPropertyPathName Name="Battery" />
-    <RootPropertyPathName Name="Value" />
+    <RootPropertyPathName Name="Motor" />
     <RootPropertyPathName Name="Modules" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -55,10 +55,7 @@
       <RootProperty Name="Padding" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="UpdateSourceTrigger" />
       <RootProperty Name="Mode" />
-      <RootProperty Name="ElementName" />
-      <RootProperty Name="Path" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Source" />
@@ -98,11 +95,6 @@
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ContentControl">
-      <RootProperty Name="HorizontalContentAlignment" />
-      <RootProperty Name="ContentTemplate" />
-      <RootProperty Name="Content" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Text" />
       <RootProperty Name="Width" />
@@ -125,11 +117,17 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Name" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentControl">
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="ContentTemplate" />
+      <RootProperty Name="Content" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Slider">
       <RootProperty Name="Name" />
       <RootProperty Name="Maximum" />
       <RootProperty Name="Orientation" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Value" />
     </RootType>
     <RootType FullName="OmegaSplicer.FlyPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.Pivot">

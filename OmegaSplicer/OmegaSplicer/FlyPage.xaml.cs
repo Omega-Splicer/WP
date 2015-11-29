@@ -16,6 +16,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using OmegaSplicer.ViewModelNamespace;
+using OmegaSplicer.Model;
 
 // Pour en savoir plus sur le modèle d'élément Page de base, consultez la page http://go.microsoft.com/fwlink/?LinkID=390556
 
@@ -120,6 +122,7 @@ namespace OmegaSplicer
 
         private void MainPage(object sender, RoutedEventArgs e)
         {
+            ((ViewModel)this.DataContext).SelectedModule.Reset();
             if (this.navigationHelper.CanGoBack())
                 this.navigationHelper.GoBack();
         }

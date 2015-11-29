@@ -56,12 +56,16 @@
 
     <Page.BottomAppBar>
         <CommandBar>
-            <AppBarButton x:Name="AddAppBarButton" Label="refresh" Icon="Refresh" />
+            <AppBarButton x:Name="RefreshButton" Label="refresh" Icon="Refresh"/>
+            <AppBarButton x:ConnectionId='1' x:Name="SettingsButton" Label="settings" Icon="Setting"                             />
+            <AppBarButton x:ConnectionId='2' x:Name="PairButton" Label="pairs" Icon="Link"                          />
+            <AppBarButton x:ConnectionId='3' x:Name="FlyButton" Label="fly" Icon="Play"                />
             <CommandBar.SecondaryCommands>
                 <!--AppBarButton Label="Home" Click="HomePageSelected"/-->
-                <AppBarButton x:ConnectionId='1' Label="Settings"                             />
-                <AppBarButton x:ConnectionId='2' Label="Pairs"                          />
-                <AppBarButton x:ConnectionId='3' Label="Fly"                />
+                <AppBarButton Label="Refresh"/>
+                <AppBarButton x:ConnectionId='4' Label="Settings"                             />
+                <AppBarButton x:ConnectionId='5' Label="Pairs"                          />
+                <AppBarButton x:ConnectionId='6' Label="Fly"                />
             </CommandBar.SecondaryCommands>
         </CommandBar>
     </Page.BottomAppBar>

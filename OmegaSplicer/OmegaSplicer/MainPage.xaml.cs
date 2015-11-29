@@ -105,14 +105,14 @@ namespace OmegaSplicer
         /// les gestionnaires d'événements qui ne peuvent pas annuler la requête de navigation.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            ShowStatusBar();
+            this.ShowStatusBar();
             DisplayInformation.AutoRotationPreferences = DisplayOrientations.Portrait;
             this.navigationHelper.OnNavigatedTo(e);
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
-            ShowStatusBar();
+            this.ShowStatusBar();
             DisplayInformation.AutoRotationPreferences = DisplayOrientations.Portrait;
             this.navigationHelper.OnNavigatedFrom(e);
         }
@@ -125,12 +125,12 @@ namespace OmegaSplicer
 
         private void PairsPageSelected(object sender, RoutedEventArgs e)
         {
-            main_pivot.SelectedIndex = 0;
+            this.main_pivot.SelectedIndex = 0;
         }
 
         private void SettingsPageSelected(object sender, RoutedEventArgs e)
         {
-            main_pivot.SelectedIndex = 1;
+            this.main_pivot.SelectedIndex = 1;
         }
         #endregion
     }
