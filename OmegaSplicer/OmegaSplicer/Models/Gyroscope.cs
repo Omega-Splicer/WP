@@ -10,15 +10,15 @@ namespace OmegaSplicer.Model
         private double _accelX;
         public double AccelX
         {
-            get { return _accelX; }
+            get { return this._accelX; }
             set 
             {
                 value = Math.Round(value, 2);
 
-                if (AccelX != value)
+                if (this._accelX != value)
                 {
-                    _accelX = value;
-                    RaisePropertyChanged("AccelX");
+                    this._accelX = value;
+                    this.RaisePropertyChanged("AccelX");
                 }
             }
         }
@@ -26,15 +26,15 @@ namespace OmegaSplicer.Model
         private double _accelY;
         public double AccelY
         {
-            get { return _accelY; }
+            get { return this._accelY; }
             set
             {
                 value = Math.Round(value, 2);
 
-                if (AccelY != value)
+                if (this._accelY != value)
                 {
-                    _accelY = value;
-                    RaisePropertyChanged("AccelY");
+                    this._accelY = value;
+                    this.RaisePropertyChanged("AccelY");
                 }
             }
         }
@@ -42,15 +42,15 @@ namespace OmegaSplicer.Model
         private double _accelZ;
         public double AccelZ
         {
-            get { return _accelZ; }
+            get { return this._accelZ; }
             set
             {
                 value = Math.Round(value, 2);
 
-                if (AccelZ != value)
+                if (this._accelZ != value)
                 {
-                    _accelZ = value;
-                    RaisePropertyChanged("AccelZ");
+                    this._accelZ = value;
+                    this.RaisePropertyChanged("AccelZ");
                 }
             }
         }
@@ -59,18 +59,18 @@ namespace OmegaSplicer.Model
 
         public Gyroscope()
         {
-            _accelerometer.ReadingChanged += Accelerometer_ReadingChanged;
+            this._accelerometer.ReadingChanged += this.Accelerometer_ReadingChanged;
 
-            _accelX = 0;
-            _accelY = 0;
-            _accelZ = 0;
+            this._accelX = 0;
+            this._accelY = 0;
+            this._accelZ = 0;
         }
 
         void Accelerometer_ReadingChanged(object sender, AccelerometerReadingChangedEventArgs e)
         {
-            AccelX = e.Reading.AccelerationX;
-            AccelY = e.Reading.AccelerationY;
-            AccelZ = e.Reading.AccelerationZ;
+            this.AccelX = e.Reading.AccelerationX;
+            this.AccelY = e.Reading.AccelerationY;
+            this.AccelZ = e.Reading.AccelerationZ;
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

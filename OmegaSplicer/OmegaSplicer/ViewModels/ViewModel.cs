@@ -19,58 +19,58 @@ namespace OmegaSplicer.ViewModelNamespace
 
         public Gyroscope SelectedGyro
         {
-            get { return _gyro; }
+            get { return this._gyro; }
             set
             {
-                if (_gyro == value)
+                if (this._gyro == value)
                     return;
-                _gyro = value;
+                this._gyro = value;
                 // Do logic on selection change.
             }
         }
 
         public JoyStick SelectedJoystick
         {
-            get { return _joystick; }
+            get { return this._joystick; }
             set
             {
-                if (_joystick == value)
+                if (this._joystick == value)
                     return;
-                _joystick = value;
+                this._joystick = value;
                 // Do logic on selection change.
             }   
         }
 
         public Module SelectedModule
         {
-            get { return _selectedModule; }
+            get { return this._selectedModule; }
             set
             {
-                if (_selectedModule == value)
+                if (this._selectedModule == value)
                     return;
-                _selectedModule = value;
+                this._selectedModule = value;
                 // Do logic on selection change.
             }
         }
 
         public ObservableCollection<Module> Modules
         {
-            get { return _modules; }
-            set { _modules = value; }
+            get { return this._modules; }
+            set { this._modules = value; }
         }
 
         public ViewModel() 
-        { GetModules(); }
+        { this.GetModules(); }
 
         public void GetModules()
         {
             if (ApplicationData.Current.LocalSettings.Values.Count > 0)
             {
-                GetSavedModules();
+                this.GetSavedModules();
             }
             else
             {
-                GetDefaultModules();
+                this.GetDefaultModules();
             }
         }
 
@@ -88,7 +88,7 @@ namespace OmegaSplicer.ViewModelNamespace
             a.Add(new Module() { Name = "OmegaSplicer7", Power = 60, Coor = 0, Motor = 0, Image = "Assets/Paper-Plane.png" });
             a.Add(new Module() { Name = "OmegaSplicer8", Power = 40, Coor = 0, Motor = 0, Image = "Assets/Paper-Plane.png" });
 
-            _modules = a;
+            this._modules = a;
             //MessageBox.Show("Got modules from default");
         }
 
@@ -102,7 +102,7 @@ namespace OmegaSplicer.ViewModelNamespace
                 a.Add((Module)o);
             }
 
-            _modules = a;
+            this._modules = a;
             //MessageBox.Show("Got modules from storage");
         }
     }

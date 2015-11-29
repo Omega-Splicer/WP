@@ -21,10 +21,10 @@ namespace OmegaSplicer.Model
 
         public JoyStick()
         {
-            CanvasX = 0;
-            CanvasY = 0;
-            JoystickX = 0;
-            JoystickY = 0;
+            this.CanvasX = 0;
+            this.CanvasY = 0;
+            this.JoystickX = 0;
+            this.JoystickY = 0;
         }
 
         public void Holding()

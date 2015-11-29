@@ -25,20 +25,20 @@ namespace OmegaSplicer.Model
 
         public int Power
         {
-            get { return _power; } 
+            get { return this._power; } 
             set 
             {
-            if (_power != value)
+                if (this._power != value)
                 {
-                    _power = value;
-                    if (_power <= 25)
-                        Battery = "Assets/battery_25.png";
-                    else if (_power <= 50)
-                        Battery = "Assets/battery_50.png";
-                    else if (_power <= 75)
-                        Battery = "Assets/battery_75.png";
+                    this._power = value;
+                    if (this._power <= 25)
+                        this.Battery = "Assets/battery_25.png";
+                    else if (this._power <= 50)
+                        this.Battery = "Assets/battery_50.png";
+                    else if (this._power <= 75)
+                        this.Battery = "Assets/battery_75.png";
                     else
-                        Battery = "Assets/battery_full.png";
+                        this.Battery = "Assets/battery_full.png";
                 }
             }
         }
@@ -74,8 +74,8 @@ namespace OmegaSplicer.Model
         // Reset the power add coordonate of the module
         public void Reset()
         {
-            Motor = 0;
-            Coor = 0;
+            this.Motor = 0;
+            this.Coor = 0;
         }
     }
 }

@@ -104,7 +104,7 @@ namespace OmegaSplicer
         /// les gestionnaires d'événements qui ne peuvent pas annuler la requête de navigation.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            HideStatusBar();
+            this.HideStatusBar();
 
             DisplayInformation.AutoRotationPreferences = DisplayOrientations.Landscape;
             this.navigationHelper.OnNavigatedTo(e);
@@ -112,7 +112,7 @@ namespace OmegaSplicer
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
-            HideStatusBar();
+            this.HideStatusBar();
 
             DisplayInformation.AutoRotationPreferences = DisplayOrientations.Landscape;
             this.navigationHelper.OnNavigatedFrom(e);
@@ -120,7 +120,8 @@ namespace OmegaSplicer
 
         private void MainPage(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainPage));
+            if (this.navigationHelper.CanGoBack())
+                this.navigationHelper.GoBack();
         }
         #endregion
 
