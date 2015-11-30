@@ -3,8 +3,6 @@ solution: OmegaSplicer.sln
 before_install:
   - sudo apt-get install nunit-console
 before_script:
-  -mozroots --import --sync
-  - export EnableNuGetPackageRestore=true
   - nuget restore OmegaSplicer.sln
 after_script:
   - nunit-console Tests/bin/Release/Tests.dll
