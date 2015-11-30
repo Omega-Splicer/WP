@@ -1,8 +1,8 @@
-language: c
+language: csharp
 solution: OmegaSplicer.sln
-before_install:
-  - sudo apt-get install nunit-console
+install:
+  - nuget restore OmegaSplicer.sln
+  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
 script:
-  - xbuild CI.proj
-after_script:
-  - nunit-console Tests/bin/Release/Tests.dll
+  - xbuild /p:Configuration=Release OmegaSplicer.sln
+  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./OmegaSplicer.Tests/bin/Release/OmegaSplicer.Tests.dll
