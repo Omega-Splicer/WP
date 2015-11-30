@@ -62,7 +62,6 @@
             <AppBarButton x:Name="FlyButton" Label="fly" Icon="Play" Click="FlyPage"/>
             <CommandBar.SecondaryCommands>
                 <!--AppBarButton Label="Home" Click="HomePageSelected"/-->
-                <AppBarButton Label="Refresh"/>
                 <AppBarButton Label="Settings" Click="SettingsPageSelected"/>
                 <AppBarButton Label="Pairs" Click="PairsPageSelected"/>
                 <AppBarButton Label="Fly" Click="FlyPage"/>

@@ -62,7 +62,6 @@
             <AppBarButton x:ConnectionId='3' x:Name="FlyButton" Label="fly" Icon="Play"                />
             <CommandBar.SecondaryCommands>
                 <!--AppBarButton Label="Home" Click="HomePageSelected"/-->
-                <AppBarButton Label="Refresh"/>
                 <AppBarButton x:ConnectionId='4' Label="Settings"                             />
                 <AppBarButton x:ConnectionId='5' Label="Pairs"                          />
                 <AppBarButton x:ConnectionId='6' Label="Fly"                />
