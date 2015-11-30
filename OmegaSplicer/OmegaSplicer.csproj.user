@@ -3,4 +3,10 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <DeviceId>30F105C9-681E-420b-A277-7C086EAD8A4E</DeviceId>
   </PropertyGroup>
+  <ItemGroup>
+	<Compile Include="*.cs" />
+  </ItemGroup>
+  <Target Name="Build">
+	<Csc Sources="@(Compile)"/>
+  </Target>
 </Project>
