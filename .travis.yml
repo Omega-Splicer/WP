@@ -18,7 +18,8 @@ before_install:
   - env | sort  
 
 # Make sure CMake and Mono are installed 
-  - install: ./CI/travis.${TRAVIS_OS_NAME}.install.deps.sh 
+install:
+  - ./CI/travis.${TRAVIS_OS_NAME}.install.deps.sh 
 
 # Build OmegaSplicer, OmegaSplicer and run the tests 
 script: 
