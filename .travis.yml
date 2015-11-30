@@ -1,7 +1,25 @@
-language: csharp
-solution: OmegaSplicer.sln
-install:
-  - nuget restore OmegaSplicer.sln
-  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
-script:
-  - xbuild /p:Configuration=Release OmegaSplicer.sln
+# Travis-CI Build for OmegaSlicer
+# see travis-ci.org for details 
+
+language: c 
+
+os: 
+  - osx 
+  - linux 
+
+env: 
+  global: 
+   - MONO_OPTIONS=--debug 
+
+before_install: 
+  - date -u 
+  - uname -a 
+  - export PATH=/opt/mono/bin:$PATH 
+  - env | sort  
+
+# Make sure CMake and Mono are installed 
+  install: ./CI/travis.${TRAVIS_OS_NAME}.install.deps.sh 
+
+# Build OmegaSplicer, OmegaSplicer and run the tests 
+script: 
+  - ./build.libgit2sharp.sh 'LEAKS_IDENTIFYING' 
