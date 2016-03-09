@@ -29,6 +29,21 @@ namespace OmegaSplicer.Model
             }
         }
 
+        // The direction of the module
+        private string _direction;
+        public string Direction
+        {
+            get { return this._direction; }
+            set
+            {
+                if (this._direction != value)
+                {
+                    this._direction = value;
+                    this.RaisePropertyChanged("Direction");
+                }
+            }
+        }
+
         // The coordonates of the module.
         public int Coor { get; set; }
 
@@ -44,13 +59,13 @@ namespace OmegaSplicer.Model
                 {
                     this._power = value;
                     if (this._power <= 25)
-                        this.Battery = "Assets/battery_25.png";
+                        this.Battery = "/Assets/battery_25.png";
                     else if (this._power <= 50)
-                        this.Battery = "Assets/battery_50.png";
+                        this.Battery = "/Assets/battery_50.png";
                     else if (this._power <= 75)
-                        this.Battery = "Assets/battery_75.png";
+                        this.Battery = "/Assets/battery_75.png";
                     else
-                        this.Battery = "Assets/battery_full.png";
+                        this.Battery = "/Assets/battery_full.png";
                     this.RaisePropertyChanged("Battery");
                 }
             }

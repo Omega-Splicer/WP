@@ -3,6 +3,8 @@ using System.Windows;
 using System.Collections.ObjectModel;
 using Windows.Storage;
 using OmegaSplicer.Model;
+using OmegaSplicer.Common;
+// using Windows.UI.Xaml.Controls;
 // using System.IO.IsolatedStorage;
 
 namespace OmegaSplicer.ViewModelNamespace
@@ -13,11 +15,14 @@ namespace OmegaSplicer.ViewModelNamespace
 
         private Module _selectedModule;
 
-        private JoyStick _joystick = new JoyStick();
+/*
+        private UserControl _selectedControl;
+
+        private Joystick _joystick = new Joystick();
 
         private Gyroscope _gyro = new Gyroscope();
 
-        public Gyroscope SelectedGyro
+        public Gyroscope Gyroscope
         {
             get { return this._gyro; }
             set
@@ -29,7 +34,7 @@ namespace OmegaSplicer.ViewModelNamespace
             }
         }
 
-        public JoyStick SelectedJoystick
+        public Joystick Joystick
         {
             get { return this._joystick; }
             set
@@ -41,6 +46,18 @@ namespace OmegaSplicer.ViewModelNamespace
             }   
         }
 
+        public UserControl SelectedControl
+        {
+            get { return this._selectedControl; }
+            set
+            {
+                if (this._selectedControl == value)
+                    return;
+                this._selectedControl = value;
+                // Do logic on selection change.
+            }
+        }
+*/
         public Module SelectedModule
         {
             get { return this._selectedModule; }
@@ -60,10 +77,13 @@ namespace OmegaSplicer.ViewModelNamespace
         }
 
         public ViewModel() 
-        { this.GetModules(); }
+        { 
+            this.GetModules();
+        }
 
         public void GetModules()
         {
+            /*
             if (ApplicationData.Current.LocalSettings.Values.Count > 0)
             {
                 this.GetSavedModules();
@@ -72,6 +92,9 @@ namespace OmegaSplicer.ViewModelNamespace
             {
                 this.GetDefaultModules();
             }
+             */
+            this.GetDefaultModules();
+            Notification.UpdateTile(this._modules.Count);
         }
 
         public void GetDefaultModules()
@@ -79,14 +102,14 @@ namespace OmegaSplicer.ViewModelNamespace
             ObservableCollection<Module> a = new ObservableCollection<Module>();
 
             // Items to collect
-            a.Add(new Module() { Name = "OmegaSplicer1", Power = 100, Coor = 0, Motor = 0, Image = "Assets/Paper-Plane.png" });
-            a.Add(new Module() { Name = "OmegaSplicer2", Power = 50, Coor = 0, Motor = 0, Image = "Assets/Paper-Plane.png" });
-            a.Add(new Module() { Name = "OmegaSplicer3", Power = 25, Coor = 0, Motor = 0, Image = "Assets/Paper-Plane.png" });
-            a.Add(new Module() { Name = "OmegaSplicer4", Power = 75, Coor = 0, Motor = 0, Image = "Assets/Paper-Plane.png" });
-            a.Add(new Module() { Name = "OmegaSplicer5", Power = 0, Coor = 0, Motor = 0, Image = "Assets/Paper-Plane.png" });
-            a.Add(new Module() { Name = "OmegaSplicer6", Power = 80, Coor = 0, Motor = 0, Image = "Assets/Paper-Plane.png" });
-            a.Add(new Module() { Name = "OmegaSplicer7", Power = 60, Coor = 0, Motor = 0, Image = "Assets/Paper-Plane.png" });
-            a.Add(new Module() { Name = "OmegaSplicer8", Power = 40, Coor = 0, Motor = 0, Image = "Assets/Paper-Plane.png" });
+            a.Add(new Module() { Name = "OmegaSplicer1", Power = 100, Coor = 0, Motor = 0, Image = "/Assets/Paper-Plane.png", Direction = "CENTER" });
+            a.Add(new Module() { Name = "OmegaSplicer2", Power = 50, Coor = 0, Motor = 0, Image = "/Assets/Paper-Plane.png", Direction = "CENTER" });
+            a.Add(new Module() { Name = "OmegaSplicer3", Power = 25, Coor = 0, Motor = 0, Image = "/Assets/Paper-Plane.png", Direction = "CENTER" });
+            a.Add(new Module() { Name = "OmegaSplicer4", Power = 75, Coor = 0, Motor = 0, Image = "/Assets/Paper-Plane.png", Direction = "CENTER" });
+            a.Add(new Module() { Name = "OmegaSplicer5", Power = 0, Coor = 0, Motor = 0, Image = "/Assets/Paper-Plane.png", Direction = "CENTER" });
+            a.Add(new Module() { Name = "OmegaSplicer6", Power = 80, Coor = 0, Motor = 0, Image = "/Assets/Paper-Plane.png", Direction = "CENTER" });
+            a.Add(new Module() { Name = "OmegaSplicer7", Power = 60, Coor = 0, Motor = 0, Image = "/Assets/Paper-Plane.png", Direction = "CENTER" });
+            a.Add(new Module() { Name = "OmegaSplicer8", Power = 40, Coor = 0, Motor = 0, Image = "/Assets/Paper-Plane.png", Direction = "CENTER" });
 
             this._modules = a;
             //MessageBox.Show("Got modules from default");

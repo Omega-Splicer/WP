@@ -19,6 +19,10 @@
     <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\bin\Debug\OmegaSplicer.exe">
       <PackagePath>OmegaSplicer.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\Assets\BadgeLogo.scale-240.png">
+      <PackagePath>Assets\BadgeLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\Assets\battery_25.png">
       <PackagePath>Assets\battery_25.png</PackagePath>
     </AppxPackagedFile>
@@ -34,9 +38,11 @@
     <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\Assets\Home_white.png">
       <PackagePath>Assets\Home_white.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\Assets\Logo.scale-240.png">
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\Assets\no_man_sky.png">
       <PackagePath>Assets\no_man_sky.png</PackagePath>
@@ -47,12 +53,26 @@
     <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\Assets\rss.png">
       <PackagePath>Assets\rss.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\Assets\SmallLogo.scale-240.png">
       <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\Assets\SplashScreen.scale-240.png">
       <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\Assets\Square150x150Logo.scale-240.png">
+      <PackagePath>Assets\Square150x150Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\Assets\Square44x44Logo.scale-240.png">
+      <PackagePath>Assets\Square44x44Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\Assets\Square71x71Logo.scale-100.png">
+      <PackagePath>Assets\Square71x71Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\Assets\Square71x71Logo.scale-240.png">
@@ -67,17 +87,53 @@
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\Assets\wallpaper1.jpg">
+      <PackagePath>Assets\wallpaper1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\Assets\wallpaper2.jpg">
+      <PackagePath>Assets\wallpaper2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\Assets\wallpaper3.jpg">
+      <PackagePath>Assets\wallpaper3.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\Assets\wallpaper4.jpg">
+      <PackagePath>Assets\wallpaper4.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\Assets\wallpaper5.jpg">
+      <PackagePath>Assets\wallpaper5.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\Assets\wallpaper6.jpg">
+      <PackagePath>Assets\wallpaper6.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\StoreManifest.xml">
+      <PackagePath>StoreManifest.xml</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\bin\Debug\Dictionary1.xbf">
-      <PackagePath>Dictionary1.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\bin\Debug\Joystick.xbf">
+      <PackagePath>Joystick.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\bin\Debug\FlyPage.xbf">
-      <PackagePath>FlyPage.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\bin\Debug\MyGyroscope.xbf">
+      <PackagePath>MyGyroscope.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\bin\Debug\MainPage.xbf">
-      <PackagePath>MainPage.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\bin\Debug\Themes\Generic.xbf">
+      <PackagePath>Themes\Generic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\bin\Debug\Views\Dictionary1.xbf">
+      <PackagePath>Views\Dictionary1.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\bin\Debug\Views\FlyPage.xbf">
+      <PackagePath>Views\FlyPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\bin\Debug\Views\MainPage.xbf">
+      <PackagePath>Views\MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\bin\Debug\Views\PairPage.xbf">
+      <PackagePath>Views\PairPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\bin\Debug\Views\SettingsPage.xbf">
+      <PackagePath>Views\SettingsPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimit_000\Desktop\WP\OmegaSplicer\bin\Debug\OmegaSplicer.xr.xml">
       <PackagePath>OmegaSplicer.xr.xml</PackagePath>
