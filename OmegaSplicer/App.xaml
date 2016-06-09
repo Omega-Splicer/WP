@@ -6,7 +6,7 @@
     xmlns:ViewModels="using:OmegaSplicer.ViewModelNamespace">
 
     <Application.Resources>
-        <ViewModels:ViewModel x:Name="DataContext" />
+        <ViewModels:OSViewModel x:Name="DataContext" />
     </Application.Resources>
 
 </Application>

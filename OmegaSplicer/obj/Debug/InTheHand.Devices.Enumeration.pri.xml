@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="InTheHand.Devices.Enumeration" version="1.0" primary="true">
+		<Qualifiers/>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="InTheHand.Devices.Enumeration">
+				<NamedResource name="DevicePickerDialog.xaml" uri="ms-resource://InTheHand.Devices.Enumeration/Files/InTheHand.Devices.Enumeration/DevicePickerDialog.xaml">
+					<Candidate type="Path">
+						<Value>InTheHand.Devices.Enumeration\DevicePickerDialog.xaml</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DevicePickerDialog.xbf" uri="ms-resource://InTheHand.Devices.Enumeration/Files/InTheHand.Devices.Enumeration/DevicePickerDialog.xbf">
+					<Candidate type="Path">
+						<Value>InTheHand.Devices.Enumeration\DevicePickerDialog.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InTheHand.Devices.Enumeration.xr.xml" uri="ms-resource://InTheHand.Devices.Enumeration/Files/InTheHand.Devices.Enumeration/InTheHand.Devices.Enumeration.xr.xml">
+					<Candidate type="Path">
+						<Value>InTheHand.Devices.Enumeration\InTheHand.Devices.Enumeration.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="InTheHand.Devices.Enumeration">
+			<ResourceMapSubtree name="Resources">
+				<ResourceMapSubtree name="DevicePicker">
+					<NamedResource name="Title" uri="ms-resource://InTheHand.Devices.Enumeration/InTheHand.Devices.Enumeration/Resources/DevicePicker/Title">
+						<Candidate type="String">
+							<Value>Connect</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="EmptyMessage">
+					<NamedResource name="Text" uri="ms-resource://InTheHand.Devices.Enumeration/InTheHand.Devices.Enumeration/Resources/EmptyMessage/Text">
+						<Candidate type="String">
+							<Value>Make sure the device is turned on and is discoverable. You might also need to make sure that Bluetooth, wireless, or WiGig is turned on.</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

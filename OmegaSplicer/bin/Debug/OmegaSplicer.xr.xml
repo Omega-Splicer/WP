@@ -4,16 +4,17 @@
     <RootPropertyPathName Name="Name" />
     <RootPropertyPathName Name="Image" />
     <RootPropertyPathName Name="SelectedModule" />
-    <RootPropertyPathName Name="Direction" />
+    <RootPropertyPathName Name="MotorLeft" />
+    <RootPropertyPathName Name="MotorRight" />
     <RootPropertyPathName Name="Battery" />
-    <RootPropertyPathName Name="Motor" />
+    <RootPropertyPathName Name="Motors" />
     <RootPropertyPathName Name="Modules" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
       <RootProperty Name="Resources" />
     </RootType>
-    <RootType FullName="OmegaSplicer.ViewModelNamespace.ViewModel" />
+    <RootType FullName="OmegaSplicer.ViewModelNamespace.OSViewModel" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
       <RootProperty Name="Content" />
     </RootType>
@@ -59,8 +60,6 @@
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Text" />
     </RootType>
     <RootType FullName="OmegaSplicer.Joystick" />

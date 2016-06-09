@@ -124,45 +124,47 @@ namespace OmegaSplicer.OmegaSplicer_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[18];
+            _typeNameTable = new string[19];
             _typeNameTable[0] = "OmegaSplicer.ViewModelNamespace.ViewModel";
             _typeNameTable[1] = "Object";
-            _typeNameTable[2] = "OmegaSplicer.Model.Gyroscope";
-            _typeNameTable[3] = "OmegaSplicer.Model.JoyStick";
-            _typeNameTable[4] = "OmegaSplicer.Model.Module";
-            _typeNameTable[5] = "System.Collections.ObjectModel.ObservableCollection`1<OmegaSplicer.Model.Module>";
-            _typeNameTable[6] = "System.Collections.ObjectModel.Collection`1<OmegaSplicer.Model.Module>";
-            _typeNameTable[7] = "String";
-            _typeNameTable[8] = "Int32";
-            _typeNameTable[9] = "OmegaSplicer.FlyPage";
-            _typeNameTable[10] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[11] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[12] = "OmegaSplicer.Common.NavigationHelper";
-            _typeNameTable[13] = "Windows.UI.Xaml.DependencyObject";
-            _typeNameTable[14] = "OmegaSplicer.Common.ObservableDictionary";
-            _typeNameTable[15] = "OmegaSplicer.MainPage";
-            _typeNameTable[16] = "OmegaSplicer.PairPage";
-            _typeNameTable[17] = "OmegaSplicer.SettingsPage";
+            _typeNameTable[2] = "OmegaSplicer.Model.Module";
+            _typeNameTable[3] = "System.Collections.ObjectModel.ObservableCollection`1<OmegaSplicer.Model.Module>";
+            _typeNameTable[4] = "System.Collections.ObjectModel.Collection`1<OmegaSplicer.Model.Module>";
+            _typeNameTable[5] = "String";
+            _typeNameTable[6] = "Int32";
+            _typeNameTable[7] = "OmegaSplicer.Joystick";
+            _typeNameTable[8] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[9] = "Double";
+            _typeNameTable[10] = "OmegaSplicer.MyGyroscope";
+            _typeNameTable[11] = "OmegaSplicer.FlyPage";
+            _typeNameTable[12] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[13] = "OmegaSplicer.Common.NavigationHelper";
+            _typeNameTable[14] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[15] = "OmegaSplicer.Common.ObservableDictionary";
+            _typeNameTable[16] = "OmegaSplicer.MainPage";
+            _typeNameTable[17] = "OmegaSplicer.PairPage";
+            _typeNameTable[18] = "OmegaSplicer.SettingsPage";
 
-            _typeTable = new global::System.Type[18];
+            _typeTable = new global::System.Type[19];
             _typeTable[0] = typeof(global::OmegaSplicer.ViewModelNamespace.ViewModel);
             _typeTable[1] = typeof(global::System.Object);
-            _typeTable[2] = typeof(global::OmegaSplicer.Model.Gyroscope);
-            _typeTable[3] = typeof(global::OmegaSplicer.Model.JoyStick);
-            _typeTable[4] = typeof(global::OmegaSplicer.Model.Module);
-            _typeTable[5] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::OmegaSplicer.Model.Module>);
-            _typeTable[6] = typeof(global::System.Collections.ObjectModel.Collection<global::OmegaSplicer.Model.Module>);
-            _typeTable[7] = typeof(global::System.String);
-            _typeTable[8] = typeof(global::System.Int32);
-            _typeTable[9] = typeof(global::OmegaSplicer.FlyPage);
-            _typeTable[10] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[11] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[12] = typeof(global::OmegaSplicer.Common.NavigationHelper);
-            _typeTable[13] = typeof(global::Windows.UI.Xaml.DependencyObject);
-            _typeTable[14] = typeof(global::OmegaSplicer.Common.ObservableDictionary);
-            _typeTable[15] = typeof(global::OmegaSplicer.MainPage);
-            _typeTable[16] = typeof(global::OmegaSplicer.PairPage);
-            _typeTable[17] = typeof(global::OmegaSplicer.SettingsPage);
+            _typeTable[2] = typeof(global::OmegaSplicer.Model.Module);
+            _typeTable[3] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::OmegaSplicer.Model.Module>);
+            _typeTable[4] = typeof(global::System.Collections.ObjectModel.Collection<global::OmegaSplicer.Model.Module>);
+            _typeTable[5] = typeof(global::System.String);
+            _typeTable[6] = typeof(global::System.Int32);
+            _typeTable[7] = typeof(global::OmegaSplicer.Joystick);
+            _typeTable[8] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[9] = typeof(global::System.Double);
+            _typeTable[10] = typeof(global::OmegaSplicer.MyGyroscope);
+            _typeTable[11] = typeof(global::OmegaSplicer.FlyPage);
+            _typeTable[12] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[13] = typeof(global::OmegaSplicer.Common.NavigationHelper);
+            _typeTable[14] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[15] = typeof(global::OmegaSplicer.Common.ObservableDictionary);
+            _typeTable[16] = typeof(global::OmegaSplicer.MainPage);
+            _typeTable[17] = typeof(global::OmegaSplicer.PairPage);
+            _typeTable[18] = typeof(global::OmegaSplicer.SettingsPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -198,29 +200,29 @@ namespace OmegaSplicer.OmegaSplicer_XamlTypeInfo
         }
 
         private object Activate_0_ViewModel() { return new global::OmegaSplicer.ViewModelNamespace.ViewModel(); }
-        private object Activate_2_Gyroscope() { return new global::OmegaSplicer.Model.Gyroscope(); }
-        private object Activate_3_JoyStick() { return new global::OmegaSplicer.Model.JoyStick(); }
-        private object Activate_4_Module() { return new global::OmegaSplicer.Model.Module(); }
-        private object Activate_5_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::OmegaSplicer.Model.Module>(); }
-        private object Activate_6_Collection() { return new global::System.Collections.ObjectModel.Collection<global::OmegaSplicer.Model.Module>(); }
-        private object Activate_9_FlyPage() { return new global::OmegaSplicer.FlyPage(); }
-        private object Activate_14_ObservableDictionary() { return new global::OmegaSplicer.Common.ObservableDictionary(); }
-        private object Activate_15_MainPage() { return new global::OmegaSplicer.MainPage(); }
-        private object Activate_16_PairPage() { return new global::OmegaSplicer.PairPage(); }
-        private object Activate_17_SettingsPage() { return new global::OmegaSplicer.SettingsPage(); }
-        private void VectorAdd_5_ObservableCollection(object instance, object item)
+        private object Activate_2_Module() { return new global::OmegaSplicer.Model.Module(); }
+        private object Activate_3_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::OmegaSplicer.Model.Module>(); }
+        private object Activate_4_Collection() { return new global::System.Collections.ObjectModel.Collection<global::OmegaSplicer.Model.Module>(); }
+        private object Activate_7_Joystick() { return new global::OmegaSplicer.Joystick(); }
+        private object Activate_10_MyGyroscope() { return new global::OmegaSplicer.MyGyroscope(); }
+        private object Activate_11_FlyPage() { return new global::OmegaSplicer.FlyPage(); }
+        private object Activate_15_ObservableDictionary() { return new global::OmegaSplicer.Common.ObservableDictionary(); }
+        private object Activate_16_MainPage() { return new global::OmegaSplicer.MainPage(); }
+        private object Activate_17_PairPage() { return new global::OmegaSplicer.PairPage(); }
+        private object Activate_18_SettingsPage() { return new global::OmegaSplicer.SettingsPage(); }
+        private void VectorAdd_3_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::OmegaSplicer.Model.Module>)instance;
             var newItem = (global::OmegaSplicer.Model.Module)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_6_Collection(object instance, object item)
+        private void VectorAdd_4_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::OmegaSplicer.Model.Module>)instance;
             var newItem = (global::OmegaSplicer.Model.Module)item;
             collection.Add(newItem);
         }
-        private void MapAdd_14_ObservableDictionary(object instance, object key, object item)
+        private void MapAdd_15_ObservableDictionary(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
             var newKey = (global::System.String)key;
@@ -241,8 +243,6 @@ namespace OmegaSplicer.OmegaSplicer_XamlTypeInfo
             case 0:   //  OmegaSplicer.ViewModelNamespace.ViewModel
                 userType = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.Activator = Activate_0_ViewModel;
-                userType.AddMemberName("SelectedGyro");
-                userType.AddMemberName("SelectedJoystick");
                 userType.AddMemberName("SelectedModule");
                 userType.AddMemberName("Modules");
                 userType.SetIsLocalType();
@@ -253,112 +253,129 @@ namespace OmegaSplicer.OmegaSplicer_XamlTypeInfo
                 xamlType = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 2:   //  OmegaSplicer.Model.Gyroscope
+            case 2:   //  OmegaSplicer.Model.Module
                 userType = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.SetIsReturnTypeStub();
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 3:   //  OmegaSplicer.Model.JoyStick
-                userType = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.SetIsReturnTypeStub();
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 4:   //  OmegaSplicer.Model.Module
-                userType = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_4_Module;
+                userType.Activator = Activate_2_Module;
                 userType.AddMemberName("Name");
                 userType.AddMemberName("Image");
                 userType.AddMemberName("Battery");
-                userType.AddMemberName("Motor");
+                userType.AddMemberName("Motors");
+                userType.AddMemberName("MotorLeft");
+                userType.AddMemberName("MotorRight");
+                userType.AddMemberName("Direction");
+                userType.AddMemberName("Percent");
                 userType.AddMemberName("Coor");
                 userType.AddMemberName("Power");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  System.Collections.ObjectModel.ObservableCollection`1<OmegaSplicer.Model.Module>
+            case 3:   //  System.Collections.ObjectModel.ObservableCollection`1<OmegaSplicer.Model.Module>
                 userType = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<OmegaSplicer.Model.Module>"));
-                userType.CollectionAdd = VectorAdd_5_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_3_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 6:   //  System.Collections.ObjectModel.Collection`1<OmegaSplicer.Model.Module>
+            case 4:   //  System.Collections.ObjectModel.Collection`1<OmegaSplicer.Model.Module>
                 userType = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_6_Collection;
-                userType.CollectionAdd = VectorAdd_6_Collection;
+                userType.Activator = Activate_4_Collection;
+                userType.CollectionAdd = VectorAdd_4_Collection;
                 xamlType = userType;
                 break;
 
-            case 7:   //  String
+            case 5:   //  String
                 xamlType = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 8:   //  Int32
+            case 6:   //  Int32
                 xamlType = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 9:   //  OmegaSplicer.FlyPage
+            case 7:   //  OmegaSplicer.Joystick
+                userType = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_7_Joystick;
+                userType.AddMemberName("Direction");
+                userType.AddMemberName("JoystickX");
+                userType.AddMemberName("JoystickY");
+                userType.AddMemberName("TimerMilliSeconds");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 8:   //  Windows.UI.Xaml.Controls.UserControl
+                xamlType = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 9:   //  Double
+                xamlType = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 10:   //  OmegaSplicer.MyGyroscope
+                userType = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_10_MyGyroscope;
+                userType.AddMemberName("Direction");
+                userType.AddMemberName("Percent");
+                userType.AddMemberName("AccelX");
+                userType.AddMemberName("AccelY");
+                userType.AddMemberName("AccelZ");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 11:   //  OmegaSplicer.FlyPage
                 userType = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_9_FlyPage;
+                userType.Activator = Activate_11_FlyPage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 10:   //  Windows.UI.Xaml.Controls.Page
+            case 12:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 11:   //  Windows.UI.Xaml.Controls.UserControl
-                xamlType = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 12:   //  OmegaSplicer.Common.NavigationHelper
+            case 13:   //  OmegaSplicer.Common.NavigationHelper
                 userType = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 13:   //  Windows.UI.Xaml.DependencyObject
+            case 14:   //  Windows.UI.Xaml.DependencyObject
                 xamlType = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 14:   //  OmegaSplicer.Common.ObservableDictionary
+            case 15:   //  OmegaSplicer.Common.ObservableDictionary
                 userType = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.DictionaryAdd = MapAdd_14_ObservableDictionary;
+                userType.DictionaryAdd = MapAdd_15_ObservableDictionary;
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 15:   //  OmegaSplicer.MainPage
+            case 16:   //  OmegaSplicer.MainPage
                 userType = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_15_MainPage;
+                userType.Activator = Activate_16_MainPage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 16:   //  OmegaSplicer.PairPage
+            case 17:   //  OmegaSplicer.PairPage
                 userType = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_16_PairPage;
+                userType.Activator = Activate_17_PairPage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 17:   //  OmegaSplicer.SettingsPage
+            case 18:   //  OmegaSplicer.SettingsPage
                 userType = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_17_SettingsPage;
+                userType.Activator = Activate_18_SettingsPage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
@@ -369,142 +386,252 @@ namespace OmegaSplicer.OmegaSplicer_XamlTypeInfo
         }
 
 
-        private object get_0_ViewModel_SelectedGyro(object instance)
-        {
-            var that = (global::OmegaSplicer.ViewModelNamespace.ViewModel)instance;
-            return that.SelectedGyro;
-        }
-        private void set_0_ViewModel_SelectedGyro(object instance, object Value)
-        {
-            var that = (global::OmegaSplicer.ViewModelNamespace.ViewModel)instance;
-            that.SelectedGyro = (global::OmegaSplicer.Model.Gyroscope)Value;
-        }
-        private object get_1_ViewModel_SelectedJoystick(object instance)
-        {
-            var that = (global::OmegaSplicer.ViewModelNamespace.ViewModel)instance;
-            return that.SelectedJoystick;
-        }
-        private void set_1_ViewModel_SelectedJoystick(object instance, object Value)
-        {
-            var that = (global::OmegaSplicer.ViewModelNamespace.ViewModel)instance;
-            that.SelectedJoystick = (global::OmegaSplicer.Model.JoyStick)Value;
-        }
-        private object get_2_ViewModel_SelectedModule(object instance)
+        private object get_0_ViewModel_SelectedModule(object instance)
         {
             var that = (global::OmegaSplicer.ViewModelNamespace.ViewModel)instance;
             return that.SelectedModule;
         }
-        private void set_2_ViewModel_SelectedModule(object instance, object Value)
+        private void set_0_ViewModel_SelectedModule(object instance, object Value)
         {
             var that = (global::OmegaSplicer.ViewModelNamespace.ViewModel)instance;
             that.SelectedModule = (global::OmegaSplicer.Model.Module)Value;
         }
-        private object get_3_ViewModel_Modules(object instance)
+        private object get_1_ViewModel_Modules(object instance)
         {
             var that = (global::OmegaSplicer.ViewModelNamespace.ViewModel)instance;
             return that.Modules;
         }
-        private void set_3_ViewModel_Modules(object instance, object Value)
+        private void set_1_ViewModel_Modules(object instance, object Value)
         {
             var that = (global::OmegaSplicer.ViewModelNamespace.ViewModel)instance;
             that.Modules = (global::System.Collections.ObjectModel.ObservableCollection<global::OmegaSplicer.Model.Module>)Value;
         }
-        private object get_4_Module_Name(object instance)
+        private object get_2_Module_Name(object instance)
         {
             var that = (global::OmegaSplicer.Model.Module)instance;
             return that.Name;
         }
-        private void set_4_Module_Name(object instance, object Value)
+        private void set_2_Module_Name(object instance, object Value)
         {
             var that = (global::OmegaSplicer.Model.Module)instance;
             that.Name = (global::System.String)Value;
         }
-        private object get_5_Module_Image(object instance)
+        private object get_3_Module_Image(object instance)
         {
             var that = (global::OmegaSplicer.Model.Module)instance;
             return that.Image;
         }
-        private void set_5_Module_Image(object instance, object Value)
+        private void set_3_Module_Image(object instance, object Value)
         {
             var that = (global::OmegaSplicer.Model.Module)instance;
             that.Image = (global::System.String)Value;
         }
-        private object get_6_Module_Battery(object instance)
+        private object get_4_Module_Battery(object instance)
         {
             var that = (global::OmegaSplicer.Model.Module)instance;
             return that.Battery;
         }
-        private void set_6_Module_Battery(object instance, object Value)
+        private void set_4_Module_Battery(object instance, object Value)
         {
             var that = (global::OmegaSplicer.Model.Module)instance;
             that.Battery = (global::System.String)Value;
         }
-        private object get_7_Module_Motor(object instance)
+        private object get_5_Module_Motors(object instance)
         {
             var that = (global::OmegaSplicer.Model.Module)instance;
-            return that.Motor;
+            return that.Motors;
         }
-        private void set_7_Module_Motor(object instance, object Value)
+        private void set_5_Module_Motors(object instance, object Value)
         {
             var that = (global::OmegaSplicer.Model.Module)instance;
-            that.Motor = (global::System.Int32)Value;
+            that.Motors = (global::System.Int32)Value;
         }
-        private object get_8_Module_Coor(object instance)
+        private object get_6_Module_MotorLeft(object instance)
+        {
+            var that = (global::OmegaSplicer.Model.Module)instance;
+            return that.MotorLeft;
+        }
+        private void set_6_Module_MotorLeft(object instance, object Value)
+        {
+            var that = (global::OmegaSplicer.Model.Module)instance;
+            that.MotorLeft = (global::System.Int32)Value;
+        }
+        private object get_7_Module_MotorRight(object instance)
+        {
+            var that = (global::OmegaSplicer.Model.Module)instance;
+            return that.MotorRight;
+        }
+        private void set_7_Module_MotorRight(object instance, object Value)
+        {
+            var that = (global::OmegaSplicer.Model.Module)instance;
+            that.MotorRight = (global::System.Int32)Value;
+        }
+        private object get_8_Module_Direction(object instance)
+        {
+            var that = (global::OmegaSplicer.Model.Module)instance;
+            return that.Direction;
+        }
+        private void set_8_Module_Direction(object instance, object Value)
+        {
+            var that = (global::OmegaSplicer.Model.Module)instance;
+            that.Direction = (global::System.String)Value;
+        }
+        private object get_9_Module_Percent(object instance)
+        {
+            var that = (global::OmegaSplicer.Model.Module)instance;
+            return that.Percent;
+        }
+        private void set_9_Module_Percent(object instance, object Value)
+        {
+            var that = (global::OmegaSplicer.Model.Module)instance;
+            that.Percent = (global::System.Int32)Value;
+        }
+        private object get_10_Module_Coor(object instance)
         {
             var that = (global::OmegaSplicer.Model.Module)instance;
             return that.Coor;
         }
-        private void set_8_Module_Coor(object instance, object Value)
+        private void set_10_Module_Coor(object instance, object Value)
         {
             var that = (global::OmegaSplicer.Model.Module)instance;
             that.Coor = (global::System.Int32)Value;
         }
-        private object get_9_Module_Power(object instance)
+        private object get_11_Module_Power(object instance)
         {
             var that = (global::OmegaSplicer.Model.Module)instance;
             return that.Power;
         }
-        private void set_9_Module_Power(object instance, object Value)
+        private void set_11_Module_Power(object instance, object Value)
         {
             var that = (global::OmegaSplicer.Model.Module)instance;
             that.Power = (global::System.Int32)Value;
         }
-        private object get_10_FlyPage_NavigationHelper(object instance)
+        private object get_12_Joystick_Direction(object instance)
+        {
+            var that = (global::OmegaSplicer.Joystick)instance;
+            return that.Direction;
+        }
+        private void set_12_Joystick_Direction(object instance, object Value)
+        {
+            var that = (global::OmegaSplicer.Joystick)instance;
+            that.Direction = (global::System.String)Value;
+        }
+        private object get_13_Joystick_JoystickX(object instance)
+        {
+            var that = (global::OmegaSplicer.Joystick)instance;
+            return that.JoystickX;
+        }
+        private void set_13_Joystick_JoystickX(object instance, object Value)
+        {
+            var that = (global::OmegaSplicer.Joystick)instance;
+            that.JoystickX = (global::System.Double)Value;
+        }
+        private object get_14_Joystick_JoystickY(object instance)
+        {
+            var that = (global::OmegaSplicer.Joystick)instance;
+            return that.JoystickY;
+        }
+        private void set_14_Joystick_JoystickY(object instance, object Value)
+        {
+            var that = (global::OmegaSplicer.Joystick)instance;
+            that.JoystickY = (global::System.Double)Value;
+        }
+        private object get_15_Joystick_TimerMilliSeconds(object instance)
+        {
+            var that = (global::OmegaSplicer.Joystick)instance;
+            return that.TimerMilliSeconds;
+        }
+        private void set_15_Joystick_TimerMilliSeconds(object instance, object Value)
+        {
+            var that = (global::OmegaSplicer.Joystick)instance;
+            that.TimerMilliSeconds = (global::System.Double)Value;
+        }
+        private object get_16_MyGyroscope_Direction(object instance)
+        {
+            var that = (global::OmegaSplicer.MyGyroscope)instance;
+            return that.Direction;
+        }
+        private void set_16_MyGyroscope_Direction(object instance, object Value)
+        {
+            var that = (global::OmegaSplicer.MyGyroscope)instance;
+            that.Direction = (global::System.String)Value;
+        }
+        private object get_17_MyGyroscope_Percent(object instance)
+        {
+            var that = (global::OmegaSplicer.MyGyroscope)instance;
+            return that.Percent;
+        }
+        private void set_17_MyGyroscope_Percent(object instance, object Value)
+        {
+            var that = (global::OmegaSplicer.MyGyroscope)instance;
+            that.Percent = (global::System.Int32)Value;
+        }
+        private object get_18_MyGyroscope_AccelX(object instance)
+        {
+            var that = (global::OmegaSplicer.MyGyroscope)instance;
+            return that.AccelX;
+        }
+        private void set_18_MyGyroscope_AccelX(object instance, object Value)
+        {
+            var that = (global::OmegaSplicer.MyGyroscope)instance;
+            that.AccelX = (global::System.Double)Value;
+        }
+        private object get_19_MyGyroscope_AccelY(object instance)
+        {
+            var that = (global::OmegaSplicer.MyGyroscope)instance;
+            return that.AccelY;
+        }
+        private void set_19_MyGyroscope_AccelY(object instance, object Value)
+        {
+            var that = (global::OmegaSplicer.MyGyroscope)instance;
+            that.AccelY = (global::System.Double)Value;
+        }
+        private object get_20_MyGyroscope_AccelZ(object instance)
+        {
+            var that = (global::OmegaSplicer.MyGyroscope)instance;
+            return that.AccelZ;
+        }
+        private void set_20_MyGyroscope_AccelZ(object instance, object Value)
+        {
+            var that = (global::OmegaSplicer.MyGyroscope)instance;
+            that.AccelZ = (global::System.Double)Value;
+        }
+        private object get_21_FlyPage_NavigationHelper(object instance)
         {
             var that = (global::OmegaSplicer.FlyPage)instance;
             return that.NavigationHelper;
         }
-        private object get_11_FlyPage_DefaultViewModel(object instance)
+        private object get_22_FlyPage_DefaultViewModel(object instance)
         {
             var that = (global::OmegaSplicer.FlyPage)instance;
             return that.DefaultViewModel;
         }
-        private object get_12_MainPage_NavigationHelper(object instance)
+        private object get_23_MainPage_NavigationHelper(object instance)
         {
             var that = (global::OmegaSplicer.MainPage)instance;
             return that.NavigationHelper;
         }
-        private object get_13_MainPage_DefaultViewModel(object instance)
+        private object get_24_MainPage_DefaultViewModel(object instance)
         {
             var that = (global::OmegaSplicer.MainPage)instance;
             return that.DefaultViewModel;
         }
-        private object get_14_PairPage_NavigationHelper(object instance)
+        private object get_25_PairPage_NavigationHelper(object instance)
         {
             var that = (global::OmegaSplicer.PairPage)instance;
             return that.NavigationHelper;
         }
-        private object get_15_PairPage_DefaultViewModel(object instance)
+        private object get_26_PairPage_DefaultViewModel(object instance)
         {
             var that = (global::OmegaSplicer.PairPage)instance;
             return that.DefaultViewModel;
         }
-        private object get_16_SettingsPage_NavigationHelper(object instance)
+        private object get_27_SettingsPage_NavigationHelper(object instance)
         {
             var that = (global::OmegaSplicer.SettingsPage)instance;
             return that.NavigationHelper;
         }
-        private object get_17_SettingsPage_DefaultViewModel(object instance)
+        private object get_28_SettingsPage_DefaultViewModel(object instance)
         {
             var that = (global::OmegaSplicer.SettingsPage)instance;
             return that.DefaultViewModel;
@@ -517,112 +644,179 @@ namespace OmegaSplicer.OmegaSplicer_XamlTypeInfo
 
             switch (longMemberName)
             {
-            case "OmegaSplicer.ViewModelNamespace.ViewModel.SelectedGyro":
-                userType = (global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OmegaSplicer.ViewModelNamespace.ViewModel");
-                xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "SelectedGyro", "OmegaSplicer.Model.Gyroscope");
-                xamlMember.Getter = get_0_ViewModel_SelectedGyro;
-                xamlMember.Setter = set_0_ViewModel_SelectedGyro;
-                break;
-            case "OmegaSplicer.ViewModelNamespace.ViewModel.SelectedJoystick":
-                userType = (global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OmegaSplicer.ViewModelNamespace.ViewModel");
-                xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "SelectedJoystick", "OmegaSplicer.Model.JoyStick");
-                xamlMember.Getter = get_1_ViewModel_SelectedJoystick;
-                xamlMember.Setter = set_1_ViewModel_SelectedJoystick;
-                break;
             case "OmegaSplicer.ViewModelNamespace.ViewModel.SelectedModule":
                 userType = (global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OmegaSplicer.ViewModelNamespace.ViewModel");
                 xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "SelectedModule", "OmegaSplicer.Model.Module");
-                xamlMember.Getter = get_2_ViewModel_SelectedModule;
-                xamlMember.Setter = set_2_ViewModel_SelectedModule;
+                xamlMember.Getter = get_0_ViewModel_SelectedModule;
+                xamlMember.Setter = set_0_ViewModel_SelectedModule;
                 break;
             case "OmegaSplicer.ViewModelNamespace.ViewModel.Modules":
                 userType = (global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OmegaSplicer.ViewModelNamespace.ViewModel");
                 xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "Modules", "System.Collections.ObjectModel.ObservableCollection`1<OmegaSplicer.Model.Module>");
-                xamlMember.Getter = get_3_ViewModel_Modules;
-                xamlMember.Setter = set_3_ViewModel_Modules;
+                xamlMember.Getter = get_1_ViewModel_Modules;
+                xamlMember.Setter = set_1_ViewModel_Modules;
                 break;
             case "OmegaSplicer.Model.Module.Name":
                 userType = (global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OmegaSplicer.Model.Module");
                 xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "Name", "String");
-                xamlMember.Getter = get_4_Module_Name;
-                xamlMember.Setter = set_4_Module_Name;
+                xamlMember.Getter = get_2_Module_Name;
+                xamlMember.Setter = set_2_Module_Name;
                 break;
             case "OmegaSplicer.Model.Module.Image":
                 userType = (global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OmegaSplicer.Model.Module");
                 xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "Image", "String");
-                xamlMember.Getter = get_5_Module_Image;
-                xamlMember.Setter = set_5_Module_Image;
+                xamlMember.Getter = get_3_Module_Image;
+                xamlMember.Setter = set_3_Module_Image;
                 break;
             case "OmegaSplicer.Model.Module.Battery":
                 userType = (global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OmegaSplicer.Model.Module");
                 xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "Battery", "String");
-                xamlMember.Getter = get_6_Module_Battery;
-                xamlMember.Setter = set_6_Module_Battery;
+                xamlMember.Getter = get_4_Module_Battery;
+                xamlMember.Setter = set_4_Module_Battery;
                 break;
-            case "OmegaSplicer.Model.Module.Motor":
+            case "OmegaSplicer.Model.Module.Motors":
                 userType = (global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OmegaSplicer.Model.Module");
-                xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "Motor", "Int32");
-                xamlMember.Getter = get_7_Module_Motor;
-                xamlMember.Setter = set_7_Module_Motor;
+                xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "Motors", "Int32");
+                xamlMember.Getter = get_5_Module_Motors;
+                xamlMember.Setter = set_5_Module_Motors;
+                break;
+            case "OmegaSplicer.Model.Module.MotorLeft":
+                userType = (global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OmegaSplicer.Model.Module");
+                xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "MotorLeft", "Int32");
+                xamlMember.Getter = get_6_Module_MotorLeft;
+                xamlMember.Setter = set_6_Module_MotorLeft;
+                break;
+            case "OmegaSplicer.Model.Module.MotorRight":
+                userType = (global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OmegaSplicer.Model.Module");
+                xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "MotorRight", "Int32");
+                xamlMember.Getter = get_7_Module_MotorRight;
+                xamlMember.Setter = set_7_Module_MotorRight;
+                break;
+            case "OmegaSplicer.Model.Module.Direction":
+                userType = (global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OmegaSplicer.Model.Module");
+                xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "Direction", "String");
+                xamlMember.Getter = get_8_Module_Direction;
+                xamlMember.Setter = set_8_Module_Direction;
+                break;
+            case "OmegaSplicer.Model.Module.Percent":
+                userType = (global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OmegaSplicer.Model.Module");
+                xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "Percent", "Int32");
+                xamlMember.Getter = get_9_Module_Percent;
+                xamlMember.Setter = set_9_Module_Percent;
                 break;
             case "OmegaSplicer.Model.Module.Coor":
                 userType = (global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OmegaSplicer.Model.Module");
                 xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "Coor", "Int32");
-                xamlMember.Getter = get_8_Module_Coor;
-                xamlMember.Setter = set_8_Module_Coor;
+                xamlMember.Getter = get_10_Module_Coor;
+                xamlMember.Setter = set_10_Module_Coor;
                 break;
             case "OmegaSplicer.Model.Module.Power":
                 userType = (global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OmegaSplicer.Model.Module");
                 xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "Power", "Int32");
-                xamlMember.Getter = get_9_Module_Power;
-                xamlMember.Setter = set_9_Module_Power;
+                xamlMember.Getter = get_11_Module_Power;
+                xamlMember.Setter = set_11_Module_Power;
+                break;
+            case "OmegaSplicer.Joystick.Direction":
+                userType = (global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OmegaSplicer.Joystick");
+                xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "Direction", "String");
+                xamlMember.Getter = get_12_Joystick_Direction;
+                xamlMember.Setter = set_12_Joystick_Direction;
+                break;
+            case "OmegaSplicer.Joystick.JoystickX":
+                userType = (global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OmegaSplicer.Joystick");
+                xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "JoystickX", "Double");
+                xamlMember.Getter = get_13_Joystick_JoystickX;
+                xamlMember.Setter = set_13_Joystick_JoystickX;
+                break;
+            case "OmegaSplicer.Joystick.JoystickY":
+                userType = (global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OmegaSplicer.Joystick");
+                xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "JoystickY", "Double");
+                xamlMember.Getter = get_14_Joystick_JoystickY;
+                xamlMember.Setter = set_14_Joystick_JoystickY;
+                break;
+            case "OmegaSplicer.Joystick.TimerMilliSeconds":
+                userType = (global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OmegaSplicer.Joystick");
+                xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "TimerMilliSeconds", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_15_Joystick_TimerMilliSeconds;
+                xamlMember.Setter = set_15_Joystick_TimerMilliSeconds;
+                break;
+            case "OmegaSplicer.MyGyroscope.Direction":
+                userType = (global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OmegaSplicer.MyGyroscope");
+                xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "Direction", "String");
+                xamlMember.Getter = get_16_MyGyroscope_Direction;
+                xamlMember.Setter = set_16_MyGyroscope_Direction;
+                break;
+            case "OmegaSplicer.MyGyroscope.Percent":
+                userType = (global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OmegaSplicer.MyGyroscope");
+                xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "Percent", "Int32");
+                xamlMember.Getter = get_17_MyGyroscope_Percent;
+                xamlMember.Setter = set_17_MyGyroscope_Percent;
+                break;
+            case "OmegaSplicer.MyGyroscope.AccelX":
+                userType = (global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OmegaSplicer.MyGyroscope");
+                xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "AccelX", "Double");
+                xamlMember.Getter = get_18_MyGyroscope_AccelX;
+                xamlMember.Setter = set_18_MyGyroscope_AccelX;
+                break;
+            case "OmegaSplicer.MyGyroscope.AccelY":
+                userType = (global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OmegaSplicer.MyGyroscope");
+                xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "AccelY", "Double");
+                xamlMember.Getter = get_19_MyGyroscope_AccelY;
+                xamlMember.Setter = set_19_MyGyroscope_AccelY;
+                break;
+            case "OmegaSplicer.MyGyroscope.AccelZ":
+                userType = (global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OmegaSplicer.MyGyroscope");
+                xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "AccelZ", "Double");
+                xamlMember.Getter = get_20_MyGyroscope_AccelZ;
+                xamlMember.Setter = set_20_MyGyroscope_AccelZ;
                 break;
             case "OmegaSplicer.FlyPage.NavigationHelper":
                 userType = (global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OmegaSplicer.FlyPage");
                 xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "NavigationHelper", "OmegaSplicer.Common.NavigationHelper");
-                xamlMember.Getter = get_10_FlyPage_NavigationHelper;
+                xamlMember.Getter = get_21_FlyPage_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "OmegaSplicer.FlyPage.DefaultViewModel":
                 userType = (global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OmegaSplicer.FlyPage");
                 xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "OmegaSplicer.Common.ObservableDictionary");
-                xamlMember.Getter = get_11_FlyPage_DefaultViewModel;
+                xamlMember.Getter = get_22_FlyPage_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "OmegaSplicer.MainPage.NavigationHelper":
                 userType = (global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OmegaSplicer.MainPage");
                 xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "NavigationHelper", "OmegaSplicer.Common.NavigationHelper");
-                xamlMember.Getter = get_12_MainPage_NavigationHelper;
+                xamlMember.Getter = get_23_MainPage_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "OmegaSplicer.MainPage.DefaultViewModel":
                 userType = (global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OmegaSplicer.MainPage");
                 xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "OmegaSplicer.Common.ObservableDictionary");
-                xamlMember.Getter = get_13_MainPage_DefaultViewModel;
+                xamlMember.Getter = get_24_MainPage_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "OmegaSplicer.PairPage.NavigationHelper":
                 userType = (global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OmegaSplicer.PairPage");
                 xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "NavigationHelper", "OmegaSplicer.Common.NavigationHelper");
-                xamlMember.Getter = get_14_PairPage_NavigationHelper;
+                xamlMember.Getter = get_25_PairPage_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "OmegaSplicer.PairPage.DefaultViewModel":
                 userType = (global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OmegaSplicer.PairPage");
                 xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "OmegaSplicer.Common.ObservableDictionary");
-                xamlMember.Getter = get_15_PairPage_DefaultViewModel;
+                xamlMember.Getter = get_26_PairPage_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "OmegaSplicer.SettingsPage.NavigationHelper":
                 userType = (global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OmegaSplicer.SettingsPage");
                 xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "NavigationHelper", "OmegaSplicer.Common.NavigationHelper");
-                xamlMember.Getter = get_16_SettingsPage_NavigationHelper;
+                xamlMember.Getter = get_27_SettingsPage_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "OmegaSplicer.SettingsPage.DefaultViewModel":
                 userType = (global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OmegaSplicer.SettingsPage");
                 xamlMember = new global::OmegaSplicer.OmegaSplicer_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "OmegaSplicer.Common.ObservableDictionary");
-                xamlMember.Getter = get_17_SettingsPage_DefaultViewModel;
+                xamlMember.Getter = get_28_SettingsPage_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             }

@@ -24,6 +24,8 @@
     <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -79,38 +81,35 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-  </ItemGroup>
-  <ItemGroup>
+    <Compile Include="Services\OSBluetoothManager.cs" />
     <Compile Include="Common\NavigationHelper.cs" />
     <Compile Include="Common\Notification.cs" />
     <Compile Include="Common\ObservableDictionary.cs" />
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Common\SuspensionManager.cs" />
-    <Compile Include="Joystick.xaml.cs">
-      <DependentUpon>Joystick.xaml</DependentUpon>
+    <Compile Include="OSJoystick.xaml.cs">
+      <DependentUpon>OSJoystick.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MyGyroscope.xaml.cs">
-      <DependentUpon>MyGyroscope.xaml</DependentUpon>
+    <Compile Include="OSGyroscope.xaml.cs">
+      <DependentUpon>OSGyroscope.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\FlyPage.xaml.cs">
-      <DependentUpon>FlyPage.xaml</DependentUpon>
+    <Compile Include="Views\OSFlyPage.xaml.cs">
+      <DependentUpon>OSFlyPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
+    <Compile Include="Views\OSMainPage.xaml.cs">
+      <DependentUpon>OSMainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Models\JoyStick.cs" />
-    <Compile Include="Models\Module.cs" />
+    <Compile Include="Models\OSDevice.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\PairPage.xaml.cs">
-      <DependentUpon>PairPage.xaml</DependentUpon>
+    <Compile Include="Views\OSPairPage.xaml.cs">
+      <DependentUpon>OSPairPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\SettingsPage.xaml.cs">
-      <DependentUpon>SettingsPage.xaml</DependentUpon>
+    <Compile Include="Views\OSSettingsPage.xaml.cs">
+      <DependentUpon>OSSettingsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModels\ViewModel.cs" />
+    <Compile Include="ViewModels\OSViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -152,11 +151,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Joystick.xaml">
+    <Page Include="OSJoystick.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MyGyroscope.xaml">
+    <Page Include="OSGyroscope.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -164,27 +163,36 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\Dictionary1.xaml">
+    <Page Include="Views\OSDictionary.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Page>
-    <Page Include="Views\FlyPage.xaml">
+    <Page Include="Views\OSFlyPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\MainPage.xaml">
+    <Page Include="Views\OSMainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\PairPage.xaml">
+    <Page Include="Views\OSPairPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\SettingsPage.xaml">
+    <Page Include="Views\OSSettingsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="InTheHand.Devices.Enumeration, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\InTheHand.Devices.Enumeration.8.1.811\lib\wpa81\InTheHand.Devices.Enumeration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
