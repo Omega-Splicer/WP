@@ -1,0 +1,24 @@
+﻿<UserControl
+    x:Class="OmegaSplicer.MyGyroscope"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OmegaSplicer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="400"
+    d:DesignWidth="400">
+
+    <Grid>
+        <!--
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            <TextBox x:Name="TextBoxX" Width="80" Height="40"/>
+            <TextBox x:Name="TextBoxY" Width="80" Height="40"/>
+            <TextBox x:Name="TextBoxZ" Width="80" Height="40"/>
+        </StackPanel>
+        -->
+        <Ellipse x:Name="ellipseX" Fill="Transparent" Stroke="White" Width="350" Height="1" />
+        <Ellipse x:Name="ellipseY" Fill="Transparent" Stroke="White" Width="1" Height="350" />
+        <Ellipse x:Name="ellipseZ" Fill="Transparent" Stroke="White" Width="350" Height="350" />
+    </Grid>
+</UserControl>

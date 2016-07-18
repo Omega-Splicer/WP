@@ -1,0 +1,12 @@
+﻿<Properties StartupItem="OmegaSplicer\OmegaSplicer.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\..\WINDOWS\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFx.targets">
+    <Files>
+      <File FileName="..\..\..\..\WINDOWS\Microsoft.NET\Framework\v4.0.30319\Microsoft.WinFx.targets" Line="296" Column="9" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:build="http://schemas.microsoft.com/developer/appx/2012/build" IgnorableNamespaces="build">
+  <!--
+    LE FICHIER MANIFESTE DE CE PACKAGE A ÉTÉ GÉNÉRÉ PAR LE PROCESSUS DE GÉNÉRATION.
+
+    Les modifications apportées à ce fichier seront perdues lors de la régénération. Pour corriger les erreurs  présentes dans ce fichier, modifiez le fichier source .appxmanifest.
+
+    Pour plus d'informations sur les fichiers manifeste, consultez http://go.microsoft.com/fwlink/?LinkID=241727
+  -->
+  <Identity Name="8ed37ac8-c28b-4e43-be31-48c537a763c6" Publisher="CN=dimit_000" Version="1.0.0.0" ProcessorArchitecture="neutral" />
+  <mp:PhoneIdentity PhoneProductId="8ed37ac8-c28b-4e43-be31-48c537a763c6" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>OmegaSplicer</DisplayName>
+    <PublisherDisplayName>cisner_d</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.1</OSMinVersion>
+    <OSMaxVersionTested>6.3.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="FR-FR" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="OmegaSplicer.exe" EntryPoint="OmegaSplicer.App">
+      <m3:VisualElements DisplayName="OmegaSplicer" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="OmegaSplicer" ForegroundText="light" BackgroundColor="transparent" ToastCapable="true">
+        <m3:LockScreen Notification="badge" BadgeLogo="Assets\BadgeLogo.png" />
+        <m3:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\Square71x71Logo.png">
+          <m3:ShowNameOnTiles>
+            <m3:ShowOn Tile="square150x150Logo" />
+            <m3:ShowOn Tile="wide310x150Logo" />
+          </m3:ShowNameOnTiles>
+        </m3:DefaultTile>
+        <m3:SplashScreen Image="Assets\SplashScreen.png" />
+      </m3:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClientServer" />
+    <DeviceCapability Name="proximity" />
+    <m2:DeviceCapability Name="bluetooth.genericAttributeProfile">
+      <m2:Device Id="any">
+        <m2:Function Type="name:genericAccess" />
+      </m2:Device>
+    </m2:DeviceCapability>
+  </Capabilities>
+  <build:Metadata>
+    <build:Item Name="TargetFrameworkMoniker" Value="WindowsPhoneApp,Version=v8.1" />
+    <build:Item Name="VisualStudio" Version="12.0" />
+    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Ultimate 2013" />
+    <build:Item Name="OperatingSystem" Version="10.0.10586.0 (th2_release.151029-1700)" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="12.0.40629.0" />
+    <build:Item Name="ProjectGUID" Value="{6EF0B940-4FCB-417F-A195-4AD38433AFF2}" />
+    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="12.0.30501.0" />
+    <build:Item Name="MakePri.exe" Version="6.3.9600.17336 (winblue.150226-1500)" />
+  </build:Metadata>
+</Package>
