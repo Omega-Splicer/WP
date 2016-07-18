@@ -3,7 +3,7 @@
 <p align="center">
 <b><a href="#overview">Overview</a></b>
 |
-<b><a href="#screenshot">Screenshots</a></b>
+<b><a href="#screenshots">Screenshots</a></b>
 |
 <b><a href="#credits">Credits</a></b>
 |
