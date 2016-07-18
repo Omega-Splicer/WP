@@ -1,4 +1,4 @@
-![Baner](./Screenshot/banerOS.png)
+![Baner](./Screenshots/banerOS.png)
 
 <p align="center">
 <b><a href="#overview">Overview</a></b>
