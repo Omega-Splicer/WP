@@ -12,3 +12,4 @@ Dimitri CISNEROS : https://fr.linkedin.com/in/billybichon
 
 ## License
 
+Licensed under the MIT license.
