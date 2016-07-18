@@ -3,7 +3,7 @@
 <p align="center">
 <b><a href="#overview">Overview</a></b>
 |
-<b><a href="#screenshot">Screenshot</a></b>
+<b><a href="#screenshot">Screenshots</a></b>
 |
 <b><a href="#credits">Credits</a></b>
 |
@@ -21,7 +21,9 @@
 
 Ceci est le dépot de l'application windows phone Omega-Splicer. C'est un projet Epitech de 5ème année, l'EIP (Epitech Innovative Project).
 
-## Screenshot
+## Screenshots
+
+![Screenshot](./Screenshots/WP-OmegaSplicer-FlyPage-Gyroscope.PNG)
 
 ## Credits
 
