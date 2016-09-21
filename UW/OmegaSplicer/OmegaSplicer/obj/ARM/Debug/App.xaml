@@ -1,0 +1,13 @@
+﻿<Application
+    x:Class="OmegaSplicer.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OmegaSplicer" RequestedTheme="Light"
+    xmlns:ViewModels="using:OmegaSplicer.ViewModels">
+
+    <Application.Resources>
+        <ViewModels:OSDevicesViewModel x:Name="DEVICES"/>
+        <local:Settings x:Name="SETTINGS"/>
+    </Application.Resources>
+</Application>
+

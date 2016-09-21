@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="OmegaSplicer.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OmegaSplicer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <!-- Get Templates from OSDictionary -->
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="OSDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <!-- Set the Background of the page -->
+    <Page.Background>
+        <ImageBrush ImageSource="/Assets/OSBackgroundLand.jpg" Stretch="UniformToFill" />
+    </Page.Background>
+
+    <!-- Content of the page -->
+    <Grid Name="MainContent">
+
+    </Grid>
+</Page>

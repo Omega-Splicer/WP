@@ -1,0 +1,47 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OmegaSplicer.Views">
+
+    <!-- Template use for Title -->
+    <DataTemplate x:Key="TitleTemplate">
+        <Grid Height="50">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid Height="2" Background="Gray"/>
+            <TextBlock Grid.Column="1" Text="{Binding}" VerticalAlignment="Center" Style="{ThemeResource TitleTextBlockStyle}" TextAlignment="Center"  Margin="5,0,5,0"/>
+            <Grid Height="2" Background="Gray" Grid.Column="2"/>
+        </Grid>
+    </DataTemplate>
+
+    <!-- Template use for simple Item -->
+    <DataTemplate x:Key="ItemTemplate">
+        <Grid >
+            <TextBlock Text="{Binding Name}" FontFamily="Segoe WP Light" VerticalAlignment="Center" Margin="16,16,16,16" FontSize="16"/>
+        </Grid>
+    </DataTemplate>
+
+    <!-- Template use for DrawerMenu Item -->
+    <DataTemplate x:Key="MenuDrawerItem">
+        <StackPanel Orientation="Horizontal">
+            <Grid Width="50" Height="50">
+                <TextBlock FontFamily="Segoe MDL2 Assets" Text="{Binding Icon, Mode=OneWay}"
+                         VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Grid>
+            <TextBlock Text="{Binding Name, Mode=OneWay}" FontSize="18" VerticalAlignment="Center" />
+        </StackPanel>
+    </DataTemplate>
+
+    <!-- 
+    <Style TargetType="Slider">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderBrush" Value="White"/>
+        <Setter Property="BorderThickness" Value="5"/>
+
+    </Style>
+ -->
+</ResourceDictionary>
+
